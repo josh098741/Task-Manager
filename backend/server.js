@@ -5,7 +5,7 @@ const path = require('path')
 const connectDB = require('./db/connect')
 
 app.use(express.json());
-app.use(express.static(path.join(__dirname,'..','frontend')))
+app.use(express.static(path.join(__dirname,'..','frontend'),{extensions: ["html"]}))
 
 const PORT = process.env.PORT || 5000
 const start = async (req,res) => {
