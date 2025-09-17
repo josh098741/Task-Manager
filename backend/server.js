@@ -4,6 +4,7 @@ const app = express();
 const path = require('path')
 const connectDB = require('./db/connect')
 
+app.use(express.json());
 app.use(express.static(path.join(__dirname,'..','frontend')))
 
 const PORT = process.env.PORT || 5000
