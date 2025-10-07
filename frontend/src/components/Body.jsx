@@ -67,7 +67,7 @@ function Body(){
                                     <div className="flex justify-between">
                                         <span>{new Date(note.createdAt).toLocaleDateString()}</span>
                                         <div>
-                                            <Link to="/update">
+                                            <Link to={`/update/${note._id}`}>
                                                 <button className='mx-2 bg-blue-500 w-7 h-7 rounded-full hover:bg-red-600 transition'>📝</button>
                                             </Link>
                                             <button className='mx-2 bg-blue-500 w-7 h-7 rounded-full hover:bg-red-600 transition' onClick={() => deleteNote(note._id)}>🗑️</button>
