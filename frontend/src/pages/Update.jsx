@@ -57,7 +57,7 @@ function Update(){
             <div className="border w-96 h-96 flex flex-col justify-center items-center border-gray-900">
                 {
                     loading ? (
-                        <div className="">Loading</div>
+                        <div className="w-10 h-10 border-2 rounded-full border-l-blue-500 animate-spin"></div>
                     )
                     : (
                         <form onSubmit={handleSubmit}>
