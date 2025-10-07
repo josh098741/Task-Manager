@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
-import {} from 
+import {Link} from 'react-router-dom'
+
 function Body(){
 
     const [notes, setNotes] = useState([])
@@ -8,7 +9,7 @@ function Body(){
     return(
         <>
             <div className='flex justify-end mr-20 mt-20'>
-                <button className="border p-3">Create A Note</button>
+                <Link to=""><button className="border p-3">Create A Note</button></Link>
             </div>
             <div className="m-20 h-96">
                 <div>
