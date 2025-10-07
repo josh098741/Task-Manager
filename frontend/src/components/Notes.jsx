@@ -1,7 +1,9 @@
 
 
 function Notes(){
-    return();
+    return(
+        <div></div>
+    );
 }
 
 export default Notes

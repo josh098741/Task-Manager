@@ -9,9 +9,9 @@ function Body(){
     return(
         <>
             <div className='flex justify-end mr-20 mt-20'>
-                <Link to=""><button className="border p-3">Create A Note</button></Link>
+                <Link to="/create"><button className="border p-3">Create A Note</button></Link>
             </div>
-            <div className="m-20 h-96">
+            <div className="m-10 h-96 mt-0">
                 <div>
                     <p className="text-center font-bold text-xl">
                         Take Your Notes here and view them Any time
